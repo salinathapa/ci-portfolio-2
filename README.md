@@ -96,6 +96,8 @@ All features are fully responsive on all devices and screen widths.
 
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/119977423/231018617-989fc23f-2f01-4f55-9c52-cacabfb9a6a7.png">
 
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/119977423/231018762-685b3a20-6ee4-43a5-a6b7-628af4194e3b.png">
+
 ---
 
 ## **Technologies Used**
