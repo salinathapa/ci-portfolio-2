@@ -23,16 +23,21 @@
         <i class="fa-solid fa-wallet" style="color: #000000;"></i>
     </header>
 
-    <!---income-->
-    <section class="income">
+    <div class="navigation">
+        <nav>
+            <p title="How to use the Expense Tracker" id="How To Use the Expense Tracker">How To Use the Expense Tracker</p>
+        </nav>
+    </div>
+
+    <section class="calculator">
+
+        <!---income-->
         <form id="income" aria-label="income">
             <label for="income-amount" aria-label="Income amount">Income:</label>
             <input type="number" placeholder="Income Amount" class="income" required aria-label="Input income amount">
         </form>
-    </section>
 
-    <!---expenses-->
-    <section class="expenses">
+        <!---expenses-->
         <form id="expenses" aria-label="expenses">
             <div class="transaction-name">
                 <label for="transaction-name" aria-label="Transaction name">Name:</label>
@@ -57,20 +62,18 @@
                 <label for="transaction-date" aria-label="Transaction date">Date:</label>
                 <input type="date" id="transaction-date">
             </div>
-            <button type="button" id="add-expense" aria-label="Input expense button">Add Expense</button>
-            <button type="button" id="remove-expense" aria-label="Remove expense button">Remove Expense</button>
+            <button type="button" id="add-expense" aria-label="Input expense button">Add</button>
+            <button type="button" id="remove-expense" aria-label="Remove expense button">Remove</button>
         </form>
-    </section>
+        
+        <!---calculator-->
+            <button type="button" id="calculate" aria-label="Calculate expenses button">Calculate!</button>
+            <div id="total-expense"></div>
+            <div id="remaining"></div>
 
-    <!---calculator-->
-    <section class="calculation">
-        <button type="button" id="calculate" aria-label="Calculate expenses button">Calculate!</button>
-        <div id="total-expense"></div>
-        <div id="remaining"></div>
+        <!---print-->
+        <button type="button" id="print" aria-label="Print button">Print</button>
     </section>
-
-    <!---print-->
-    <button type="button" id="print" aria-label="Print button">Print</button>
 
     <!---footer-->
     <footer>
