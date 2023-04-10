@@ -13,21 +13,23 @@
 
     <title>Expense Tracker</title>
     <script src="https://kit.fontawesome.com/2d69e80447.js" crossorigin="anonymous"></script>
+    <script src="Assets/JS/script.js"></script>
 </head>
 
 <body>
     <!---heading-->
     <header>
-        <i class="fa-solid fa-wallet" style="color: #000000;"></i>
-        <h1>EXPENSE TRACKER</h1>
-        <i class="fa-solid fa-wallet" style="color: #000000;"></i>
+        <div class="title">
+            <i class="fa-solid fa-wallet" style="color: #000000;"></i>
+            <h1>EXPENSE TRACKER</h1>
+            <i class="fa-solid fa-wallet" style="color: #000000;"></i>
+        </div>
+        <div class="navigation">
+            <nav>
+                <span title="How to use the Expense Tracker" id="How To Use the Expense Tracker">How To Use the Expense Tracker</span>
+            </nav>
+        </div>
     </header>
-
-    <div class="navigation">
-        <nav>
-            <p title="How to use the Expense Tracker" id="How To Use the Expense Tracker">How To Use the Expense Tracker</p>
-        </nav>
-    </div>
 
     <section class="calculator">
 
@@ -39,31 +41,33 @@
 
         <!---expenses-->
         <form id="expenses" aria-label="expenses">
-            <div class="transaction-name">
-                <label for="transaction-name" aria-label="Transaction name">Name:</label>
-                <input type="text" placeholder="Name" id="transaction-name">
+            <div class="expense-row">
+                <div class="transaction-name column">
+                    <label for="transaction-name" aria-label="Transaction name">Name:</label>
+                    <input type="text" placeholder="Name" id="transaction-name">
+                </div>
+                <div class="transaction-amount column">
+                    <label for="transaction-amount" aria-label="Transaction amount">Amount:</label>
+                    <input type="number" placeholder="Amount" id="transaction-amount">
+                </div>
+                <div class="transaction-type column">
+                    <label for="transaction" aria-label="Transaction Type">Transaction Type: </label>
+                    <select id="transaction" aria-label="Transaction type selection">
+                        <option value="Choose">Choose...</option>
+                            <option value="Card">Card</option>
+                            <option value="Cash">Cash</option>
+                            <option value="Cheque">Cheque</option>
+                            <option value="Transfer">Transfer</option>
+                            <option value="Other">Other</option>
+                        </select>
+                </div>
+                <div class="transaction-date column">
+                    <label for="transaction-date" aria-label="Transaction date">Date:</label>
+                    <input type="date" id="transaction-date">
+                </div>
+                <button type="button" class="add-expense" aria-label="Input expense button">Add</button>
+                <button type="button" class="remove-expense" aria-label="Remove expense button">Remove</button>
             </div>
-            <div class="transaction-amount">
-                <label for="transaction-amount" aria-label="Transaction amount">Amount:</label>
-                <input type="number" placeholder="Amount" id="transaction-amount">
-            </div>
-            <div class="transaction-type">
-                <label for="transaction" aria-label="Transaction Type">Transaction Type: </label>
-                <select id="transaction" aria-label="Transaction type selection">
-                    <option value="Choose">Choose...</option>
-                        <option value="Card">Card</option>
-                        <option value="Cash">Cash</option>
-                        <option value="Cheque">Cheque</option>
-                        <option value="Transfer">Transfer</option>
-                        <option value="Other">Other</option>
-                    </select>
-            </div>
-            <div class="transaction-date">
-                <label for="transaction-date" aria-label="Transaction date">Date:</label>
-                <input type="date" id="transaction-date">
-            </div>
-            <button type="button" id="add-expense" aria-label="Input expense button">Add</button>
-            <button type="button" id="remove-expense" aria-label="Remove expense button">Remove</button>
         </form>
         
         <!---calculator-->
@@ -94,8 +98,5 @@
             <p><i class="far fa-copyright" style="color: #000000;"></i>Salina Thapa 2023</p>
         </div>
     </footer>
-
-    <!--JavaScript-->
-    <script src="Assets/JS/script.js">
 </body>
 </html>
