@@ -28,14 +28,6 @@ header {
     margin: 10px;
 }
 
-nav {
-    /*background-color: white;*/
-    text-align: center;
-    font-size: 120%;
-    font-weight: 500;
-    padding-bottom: 10px;
-}
-
 .calculator {
     background-color: white;
     display: flex;

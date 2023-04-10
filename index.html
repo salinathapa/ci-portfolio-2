@@ -24,11 +24,6 @@
             <h1>EXPENSE TRACKER</h1>
             <i class="fa-solid fa-wallet" style="color: #000000;"></i>
         </div>
-        <div class="navigation">
-            <nav>
-                <span title="How to use the Expense Tracker" id="How To Use the Expense Tracker">How To Use the Expense Tracker</span>
-            </nav>
-        </div>
     </header>
 
     <section class="calculator">
@@ -48,7 +43,7 @@
                 </div>
                 <div class="transaction-amount column">
                     <label for="transaction-amount" aria-label="Transaction amount">Amount:</label>
-                    <input type="number" placeholder="Amount" id="transaction-amount">
+                    <input type="number" placeholder="Amount" class="transaction-amount-input">
                 </div>
                 <div class="transaction-type column">
                     <label for="transaction" aria-label="Transaction Type">Transaction Type: </label>
@@ -69,14 +64,14 @@
                 <button type="button" class="remove-expense" aria-label="Remove expense button">Remove</button>
             </div>
         </form>
+
+        <a id="total-expense-amount"></a>
+        <a id="total-remaining"></a>
         
         <!---calculator-->
-            <button type="button" id="calculate" aria-label="Calculate expenses button">Calculate!</button>
+            <button type="button" onclick="CalculateExpenses()" id="calculate" aria-label="Calculate expenses button">Calculate!</button>
             <div id="total-expense"></div>
             <div id="remaining"></div>
-
-        <!---print-->
-        <button type="button" id="print" aria-label="Print button">Print</button>
     </section>
 
     <!---footer-->

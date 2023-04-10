@@ -9,15 +9,40 @@ function OnAddExpenseClicked() {
     document.querySelector("#expenses").appendChild(newElement);
 
     UpdateAddExpenseBtnEvent();
+    UpdateRemoveExpenseClicked();
 }
 
 function UpdateAddExpenseBtnEvent() {
-    document.querySelectorAll(".add-expense").forEach(function(el) {
-        el.onclick = function () {OnAddExpenseClicked()};
+    document.querySelectorAll(".add-expense").forEach(function(button) {
+        button.onclick = function () {OnAddExpenseClicked()};
     });
+}
+
+function OnRemoveExpenseClicked(button) {
+    button.parentElement.remove();
+}
+
+function UpdateRemoveExpenseClicked() {
+    document.querySelectorAll(".remove-expense").forEach(function(button) {
+        button.onclick = function () {OnRemoveExpenseClicked(button)};
+    });
+}
+
+function CalculateExpenses() {
+    var Amount = 0;
+    document.querySelectorAll(".transaction-amount-input").forEach(function(total) {
+        Amount += Number(total.value);
+    });
+
+    var IncomeAmount = Number(document.querySelector(".income").value); 
+    var TotalRemaining = IncomeAmount - Amount;
+
+    document.querySelector("#total-expense-amount").innerHTML = "Total Expense: £" + Amount;
+    document.querySelector("#total-remaining").innerHTML = "Total Remaining: £" + TotalRemaining;
 }
 
 document.addEventListener("DOMContentLoaded", function() {
     expenseRowTemplate = document.querySelector(".expense-row").innerHTML;
     UpdateAddExpenseBtnEvent();
+    UpdateRemoveExpenseClicked();
 });
