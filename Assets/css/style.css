@@ -21,6 +21,7 @@ header {
 
 nav {
     background-color: white;
+    border-radius: 15px;
     text-align: center;
     font-size: 120%;
     font-weight: 500;
@@ -56,6 +57,10 @@ button {
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
+}
+
+.remove-expense {
+    background-color: red;
 }
 
 footer{
