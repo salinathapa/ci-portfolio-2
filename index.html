@@ -21,24 +21,54 @@
         <i class="fa-solid fa-wallet" style="color: #000000;"></i>
     </header>
 
-    <section class="calculator">
+    <section class="income">
         <form id="income" aria-label="income">
-            <h2>Income:</h2>
-            <div id="income-container">
-                 <input type="number" placeholder="Income amount" class="income" required aria-label="Income amount input field">
-            </div>
+            <label for="income-amount" aria-label="Income amount">Income:</label>
+            <input type="number" placeholder="Income Amount" class="income" required aria-label="Input income amount">
+        </form>
+    </section>
 
-        <div class="expense-type">
-            <div id="currency-box">
-                <label for="currency" aria-label="Transaction Type">Transaction Type:</label>
-                <select id="currency" aria-label="Currency selection options">
+    <section class="expenses">
+        <form id="expenses" aria-label="expenses">
+            <div class="transaction-name">
+                <label for="transaction-name" aria-label="Transaction name">Name:</label>
+                <input type="text" id="transaction-name">
+            </div>
+            <div class="transaction-amount">
+                <label for="transaction-amount" aria-label="Transaction amount">Amount:</label>
+                <input type="number" id="transaction-amount">
+            </div>
+            <div class="transaction-type">
+                <label for="transaction" aria-label="Transaction Type">Transaction Type: </label>
+                <select id="transaction" aria-label="Transaction type selection">
                     <option value="Choose">Choose...</option>
                         <option value="Card">Card</option>
                         <option value="Cash">Cash</option>
                         <option value="Cheque">Cheque</option>
                         <option value="Transfer">Transfer</option>
                         <option value="Other">Other</option>
-                </select>
+                    </select>
             </div>
+            <div class="transaction-date">
+                <label for="transaction-date" aria-label="Transaction date">Date:</label>
+                <input type="date" id="transaction-date">
+            </div>
+            <button type="submit" class="button">Add Expense</button>
+        </form>
+    </section>
+
+    <div id="expense-container">
+        <div class="expense-item">
+            <input type="text" placeholder="Expense name" aria-label="Expense name input field">
+            <input type="number" placeholder="Expense amount" class="expense" aria-label="Expense amount input field">
+            <!-- Remove expense button -->
+            <button type="button" class="remove-expense-btn" aria-label="Remove expense input fields">Remove</button>
+        </div>
+    </div>
+    <!-- Add expense button -->
+    <button type="button" id="add-expense-btn" aria-label="Add expense input fields">Add expense</button>
+    <br>
+</form>
+
 </body>
 </html>
