@@ -16,11 +16,14 @@
 </head>
 
 <body>
+    <!---heading-->
     <header>
+        <i class="fa-solid fa-wallet" style="color: #000000;"></i>
         <h1>EXPENSE TRACKER</h1>
         <i class="fa-solid fa-wallet" style="color: #000000;"></i>
     </header>
 
+    <!---income-->
     <section class="income">
         <form id="income" aria-label="income">
             <label for="income-amount" aria-label="Income amount">Income:</label>
@@ -28,6 +31,7 @@
         </form>
     </section>
 
+    <!---expenses-->
     <section class="expenses">
         <form id="expenses" aria-label="expenses">
             <div class="transaction-name">
@@ -53,22 +57,40 @@
                 <label for="transaction-date" aria-label="Transaction date">Date:</label>
                 <input type="date" id="transaction-date">
             </div>
-            <button type="submit" class="button">Add Expense</button>
+            <button type="button" id="add-expense" aria-label="Input expense button">Add Expense</button>
+            <button type="button" id="remove-expense" aria-label="Remove expense button">Remove Expense</button>
         </form>
     </section>
 
-    <div id="expense-container">
-        <div class="expense-item">
-            <input type="text" placeholder="Expense name" aria-label="Expense name input field">
-            <input type="number" placeholder="Expense amount" class="expense" aria-label="Expense amount input field">
-            <!-- Remove expense button -->
-            <button type="button" class="remove-expense-btn" aria-label="Remove expense input fields">Remove</button>
+    <!---calculator-->
+    <section class="calculation">
+        <button type="button" id="calculate" aria-label="Calculate expenses button">Calculate!</button>
+        <div id="total-expense"></div>
+        <div id="remaining"></div>
+    </section>
+
+    <!---print-->
+    <button type="button" id="print" aria-label="Print button">Print</button>
+
+    <!---footer-->
+    <footer>
+        <h3>Connect with me on Social Media!</h3>
+        <ul class="socials">
+            <li>
+                <a href="https://www.linkedin.com/in/salinathapa/" target="_blank" rel="noopener"
+                    aria-label="Find me on LinkedIn (link opens in a new tab)">
+                    <i class="fa-brands fa-linkedin" style="color: #000000;"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/salinathapa" target="_blank" rel="noopener"
+                    aria-label="Find me on GitHub (link opens in a new tab)">
+                    <i class="fa-brands fa-github" style="color: #000000;"></i></a>
+            </li>
+        </ul>
+        <div class="copyright">
+            <p><i class="far fa-copyright" style="color: #000000;"></i>Salina Thapa 2023</p>
         </div>
-    </div>
-    <!-- Add expense button -->
-    <button type="button" id="add-expense-btn" aria-label="Add expense input fields">Add expense</button>
-    <br>
-</form>
+    </footer>
 
 </body>
 </html>
