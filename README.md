@@ -90,6 +90,12 @@ All features are fully responsive on all devices and screen widths.
 * Tooltip showing for 'About' and the logo image, hover effect on 'About' text in the header and modal opening, modal close button hover effect
 ![About modal](assets/images/readme_imgs/shared_imgs_features/about_modal.gif)
 
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/119977423/231018472-8a33efcd-ef2d-4647-a429-3747cec28f2e.png">
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/119977423/231018516-48aa57cc-a55a-4555-8b55-c302353fd257.png">
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/119977423/231018617-989fc23f-2f01-4f55-9c52-cacabfb9a6a7.png">
+
 ---
 
 ## **Technologies Used**
