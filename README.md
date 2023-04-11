@@ -22,16 +22,7 @@ Visit the live site [Here.](https://salinathapa.github.io/ci-portfolio-2/)
 * [Features](#features)
   * [Visible Features](#visible-features)
 
-* [Technologies Used](#technologies-used)
-  * [Languages Used](#languages-used)
-  * [Programs Used](#programs-used)
-
-* [Deployment](#deployment)
-
-* [Testing](#testing)
-
 * [Credits](#credits)
-  * [Code used and adapted](#code-used-and-adapted)
 
 ---
 
@@ -87,40 +78,21 @@ https://fontawesome.com/icons/wallet?f=classic&s=solid
 
 All features are fully responsive on all devices and screen widths.
 
-* Tooltip showing for 'About' and the logo image, hover effect on 'About' text in the header and modal opening, modal close button hover effect
-![About modal](assets/images/readme_imgs/shared_imgs_features/about_modal.gif)
+* Add button works as intended and the Calculate button runs the task
 
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/119977423/231018472-8a33efcd-ef2d-4647-a429-3747cec28f2e.png">
 
+* The Remove button can remove any line if required. Example shows top row from previous example removed.
+
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/119977423/231018516-48aa57cc-a55a-4555-8b55-c302353fd257.png">
+
+* As mentioned, not every detail has to be filled in if the user is only looking to do a quick calculation via numbers.
 
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/119977423/231018617-989fc23f-2f01-4f55-9c52-cacabfb9a6a7.png">
 
+* And there is no limit to how many transactions you want to add.
+
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/119977423/231018762-685b3a20-6ee4-43a5-a6b7-628af4194e3b.png">
-
----
-
-## **Technologies Used**
-
-### **Languages Used**
-
-* [HTML](https://en.wikipedia.org/wiki/HTML "Link to html wikipedia page") - The website content was developed using HTML language.
-* [CSS](https://en.wikipedia.org/wiki/CSS "Link to css wikipedia page") - The website was styled using custom CSS in an external file.
-* [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript "Link to javascript wikipedia page") - Used to handle all the functionality, interactions and calculations.
-
-### **Programs Used**
-
-* [GitHub](https://github.com/ "Link to GitHub page") - Source code hosted on GitHub, deployed using Git Pages.
-* [GitPod](https://www.gitpod.io/ "Link to GitPod page") - Used to commit, comment and push code during the development process.
-* [Font Awesome](https://fontawesome.com/ "Link to Font Awesome page") - GitHub icon was obtained from Font Awesome.
-* [Balsamiq](https://balsamiq.com/ "Link to Balsamiq page") - Used to create wireframes and website structure map for the project.
-* [Visual Studio Code + Spell Checker add on](https://code.visualstudio.com/ "Link to Visual Studio page") - Used to spell-check the html and css code
-* [Google Keep](https://keep.google.com/ "Link to Google Keep page") - Used to make notes during the project duration
-* [LanguageTool](https://languagetool.org/ "Link to Language Tool page") - Used to spell-check the contents of README.md
-* [Google Fonts](https://fonts.google.com/ "Link to Google fonts page") - Used to import fonts to the project
-* [GifCap](https://gifcap.dev/ "Link to GifCap page") - used to capture gif-s of the project 
-
-[Back to top ⇧](#budget-calculator)
 
 ---
 
@@ -153,12 +125,6 @@ Testing information can be found in a separate testing file [TESTING.md](/TESTIN
 
 ## **Credits**
 
-### **Code used and adapted**
-
-* The author used his previous project, [Boudoir Studio](https://boiann.github.io/boudoir-studio/index.html "Link to Boudoir Studio home page") ( GithHub repository [here](https://boiann.github.io/boudoir-studio/index.html "Link to Boudoir Studio home page") ), as a source for looking up the code for CSS and README purposes.
-* [Favicon and logo image](https://www.flaticon.com/free-icon/budgeting_9320681?term=budget&page=3&position=60&origin=search&related_id=9320681)
-* [CSS gradient](https://www.w3schools.com/css/css3_gradients.asp)
-* [Block input of letter 'e'](https://stackoverflow.com/questions/39291997/how-to-block-e-in-input-type-number)
-* [Modals](https://www.w3schools.com/howto/howto_css_modals.asp)
+I am very thankful to have a partner who is a full stack developer and has a job where JavaScript is mainly used. He was able to teach me how to code the language properly and test my program for me for which I am super thankful.
 
 ***
