@@ -21,6 +21,8 @@ Visit the live site [Here.](https://salinathapa.github.io/ci-portfolio-2/)
 
 * [Features](#features)
   * [Visible Features](#visible-features)
+  
+ * [Testing](#Testing)
 
 * [Credits](#credits)
 
@@ -93,6 +95,14 @@ All features are fully responsive on all devices and screen widths.
 * And there is no limit to how many transactions you want to add.
 
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/119977423/231018762-685b3a20-6ee4-43a5-a6b7-628af4194e3b.png">
+
+---
+
+## **Testing**
+
+* I tested this on Chrome and Safari as well as on other devices such as iPad and phones. All functions work as intended and the structure is still sound.
+
+* There were no errors for the HTML using the W3C Validator or for the CSS using the Jigsaw Validator.
 
 ---
 
