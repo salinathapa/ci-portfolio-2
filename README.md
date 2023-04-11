@@ -96,33 +96,6 @@ All features are fully responsive on all devices and screen widths.
 
 ---
 
-## **Deployment**
-
-This project was developed using [GitPod](https://www.gitpod.io/ "Link to GitPod site"), which was then committed and pushed to GitHub using the GitPod terminal.
-
-### **Deploying on GitHub Pages**
-To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
-
-1. Log into [GitHub](https://github.com/login "Link to GitHub login page") or [create an account](https://github.com/join "Link to GitHub create account page").
-2. Locate the [GitHub Repository](https://github.com/Boiann/budget-calculator "Link to GitHub Repository").
-3. At the top of the repository, select Settings from the menu items.
-4. Scroll down the Settings page to the "Pages" section.
-5. Under "Source" click the drop-down menu labelled "None" and select "Main".
-6. Upon selection, the page will automatically refresh meaning that the website is now deployed.
-7. Scroll back down to the "Pages" section to retrieve the deployed link.
-
-[Back to top ⇧](#budget-calculator)
-
----
-
-## **Testing**
-
-Testing information can be found in a separate testing file [TESTING.md](/TESTING.md).
-
-[Back to top ⇧](#budget-calculator)
-
----
-
 ## **Credits**
 
 I am very thankful to have a partner who is a full stack developer and has a job where JavaScript is mainly used. He was able to teach me how to code the language properly and test my program for me for which I am super thankful.
